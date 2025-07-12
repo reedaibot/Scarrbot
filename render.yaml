@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: reedai-telegram-bot
     env: python
     startCommand: python main.py
