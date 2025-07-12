@@ -2,6 +2,7 @@ services:
   - type: worker
     name: reedai-telegram-bot
     env: python
+    buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: TELEGRAM_TOKEN
