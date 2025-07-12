@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: reedai-telegram-bot
+    env: python
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
